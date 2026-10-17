@@ -1,0 +1,1045 @@
+
+{
+  "project": {
+    "name": "LearnLiv",
+    "type": "Online learning platform landing page",
+    "purpose": [
+      "Introduce the online learning platform",
+      "Help visitors discover course categories",
+      "Build trust through platform benefits and learner stories",
+      "Promote popular courses",
+      "Answer common questions",
+      "Convert visitors into registered learners"
+    ],
+    "visual_direction": [
+      "Modern educational SaaS",
+      "Friendly and approachable",
+      "Blue-led visual identity",
+      "Rounded cards and pill-shaped controls",
+      "Photography-led storytelling",
+      "Generous whitespace",
+      "Clear typographic hierarchy"
+    ],
+    "reference_interpretation": {
+      "image_format": "Tall, narrow full-page screenshot",
+      "layout": "Single vertically scrolling landing page",
+      "content_alignment": "Centered content within a constrained main container",
+      "background": "Pale cyan outer canvas, predominantly white interior sections",
+      "density": "Medium, with compact cards and substantial section spacing",
+      "note": "Values are estimated from the screenshot rather than measured from the original design file."
+    }
+  },
+
+  "designTokens": {
+    "colorPalettes": {
+      "primary": {
+        "name": "Ocean Blue",
+        "50": "#EFF6FF",
+        "100": "#DBEAFE",
+        "200": "#BFDBFE",
+        "300": "#93C5FD",
+        "400": "#60A5FA",
+        "500": "#3B82F6",
+        "600": "#2563EB",
+        "700": "#1D4ED8",
+        "800": "#1E40AF",
+        "900": "#1E3A8A",
+        "950": "#172554",
+        "usage": [
+          "Primary actions",
+          "Brand gradients",
+          "Selected category filters",
+          "Links and focus states",
+          "Decorative circular backgrounds",
+          "Highlighted statistics and badges"
+        ]
+      },
+
+      "secondary": {
+        "name": "Soft Sky",
+        "50": "#F0F9FF",
+        "100": "#E0F2FE",
+        "200": "#BAE6FD",
+        "300": "#7DD3FC",
+        "400": "#38BDF8",
+        "500": "#0EA5E9",
+        "600": "#0284C7",
+        "700": "#0369A1",
+        "800": "#075985",
+        "900": "#0C4A6E",
+        "950": "#082F49",
+        "usage": [
+          "Secondary highlights",
+          "Pale blue section backgrounds",
+          "Subtle card fills",
+          "Informational badges",
+          "Supporting gradients and illustrations"
+        ]
+      }
+    },
+
+    "neutralColors": {
+      "white": "#FFFFFF",
+      "pageCanvas": "#EAF8FF",
+      "surface": "#FFFFFF",
+      "surfaceSubtle": "#F8FAFC",
+      "surfaceMuted": "#F1F5F9",
+      "border": "#E2E8F0",
+      "borderStrong": "#CBD5E1",
+      "textPrimary": "#111827",
+      "textSecondary": "#475569",
+      "textMuted": "#64748B",
+      "textInverse": "#FFFFFF",
+      "black": "#030712",
+      "footerBackground": "#030303"
+    },
+
+    "accentColors": {
+      "yellow": "#FACC15",
+      "gold": "#FBBF24",
+      "success": "#22C55E",
+      "danger": "#EF4444",
+      "purple": "#7C3AED",
+      "pink": "#EC4899",
+      "orange": "#F97316",
+      "ratingStar": "#FACC15",
+      "discountBadge": "#EF4444"
+    },
+
+    "gradients": {
+      "hero": {
+        "value": "linear-gradient(180deg, #42A5F5 0%, #3187D2 48%, #164B7B 100%)",
+        "usage": "Hero background"
+      },
+      "heroGlow": {
+        "value": "radial-gradient(circle, rgba(147,197,253,0.45) 0%, rgba(59,130,246,0) 70%)",
+        "usage": "Behind the hero portrait"
+      },
+      "primaryButton": {
+        "value": "linear-gradient(100deg, #3B82F6 0%, #0EA5E9 100%)",
+        "usage": "Primary CTA and selected promotional controls"
+      },
+      "closingSection": {
+        "value": "linear-gradient(180deg, #EFF6FF 0%, #DBEAFE 100%)",
+        "usage": "Closing call-to-action background"
+      }
+    },
+
+    "typography": {
+      "fontStyle": "Clean, rounded, contemporary sans-serif",
+      "recommendedFont": "Inter or a similar modern sans-serif",
+      "fallback": "ui-sans-serif, system-ui, sans-serif",
+      "weights": {
+        "regular": 400,
+        "medium": 500,
+        "semibold": 600,
+        "bold": 700,
+        "extraBold": 800
+      },
+      "scale": {
+        "caption": {
+          "size": "11px–12px",
+          "lineHeight": "1.4"
+        },
+        "small": {
+          "size": "12px–14px",
+          "lineHeight": "1.5"
+        },
+        "body": {
+          "size": "14px–16px",
+          "lineHeight": "1.6"
+        },
+        "sectionTitle": {
+          "size": "24px–30px",
+          "lineHeight": "1.2",
+          "weight": 700
+        },
+        "heroTitle": {
+          "size": "32px–48px",
+          "lineHeight": "1.12",
+          "weight": 700
+        },
+        "cardTitle": {
+          "size": "14px–16px",
+          "lineHeight": "1.35",
+          "weight": 600
+        }
+      },
+      "rules": [
+        "Use sentence case for headings and controls.",
+        "Center-align hero and section headings.",
+        "Use short paragraphs with comfortable line spacing.",
+        "Use muted text for descriptions and metadata.",
+        "Avoid overly decorative fonts for general interface text."
+      ]
+    },
+
+    "spacing": {
+      "baseUnit": "4px",
+      "scale": {
+        "1": "4px",
+        "2": "8px",
+        "3": "12px",
+        "4": "16px",
+        "5": "20px",
+        "6": "24px",
+        "8": "32px",
+        "10": "40px",
+        "12": "48px",
+        "16": "64px",
+        "20": "80px"
+      },
+      "sectionPaddingY": {
+        "mobile": "40px–48px",
+        "tablet": "52px–64px",
+        "desktop": "64px–88px"
+      },
+      "cardGap": {
+        "mobile": "12px–16px",
+        "desktop": "16px–24px"
+      },
+      "containerPaddingX": {
+        "mobile": "16px",
+        "tablet": "24px",
+        "desktop": "32px"
+      }
+    },
+
+    "radii": {
+      "small": "8px",
+      "medium": "12px",
+      "large": "16px",
+      "extraLarge": "20px",
+      "hero": "0px",
+      "pill": "9999px"
+    },
+
+    "shadows": {
+      "subtle": "0 2px 8px rgba(15, 23, 42, 0.05)",
+      "card": "0 6px 20px rgba(15, 23, 42, 0.07)",
+      "floating": "0 10px 28px rgba(15, 23, 42, 0.12)",
+      "heroBadge": "0 8px 24px rgba(8, 47, 73, 0.12)"
+    },
+
+    "borders": {
+      "default": "1px solid #E2E8F0",
+      "selected": "1px solid #3B82F6",
+      "darkMode": "1px solid #334155"
+    },
+
+    "motion": {
+      "fast": "150ms",
+      "standard": "200ms",
+      "slow": "300ms",
+      "easing": "ease-in-out",
+      "rules": [
+        "Animate hover and focus states subtly.",
+        "Use small vertical movement on hoverable cards.",
+        "Keep carousel transitions smooth.",
+        "Respect reduced-motion preferences.",
+        "Do not animate decorative elements continuously without purpose."
+      ]
+    }
+  },
+
+  "themeModes": {
+    "light": {
+      "pageBackground": "#EAF8FF",
+      "mainSurface": "#FFFFFF",
+      "alternateSection": "#EAF4FF",
+      "cardSurface": "#FFFFFF",
+      "cardBorder": "#E2E8F0",
+      "heading": "#111827",
+      "bodyText": "#475569",
+      "mutedText": "#64748B",
+      "primaryAction": "#2563EB",
+      "primaryActionText": "#FFFFFF",
+      "secondaryAction": "#EFF6FF",
+      "secondaryActionText": "#1D4ED8",
+      "inputBackground": "#FFFFFF",
+      "inputBorder": "#CBD5E1",
+      "heroBackground": "Ocean blue gradient",
+      "footerBackground": "#030303",
+      "footerText": "#FFFFFF"
+    },
+
+    "dark": {
+      "pageBackground": "#0B1220",
+      "mainSurface": "#111827",
+      "alternateSection": "#0F1B2D",
+      "cardSurface": "#172235",
+      "cardBorder": "#334155",
+      "heading": "#F8FAFC",
+      "bodyText": "#CBD5E1",
+      "mutedText": "#94A3B8",
+      "primaryAction": "#60A5FA",
+      "primaryActionText": "#0B1220",
+      "secondaryAction": "#1E293B",
+      "secondaryActionText": "#BFDBFE",
+      "inputBackground": "#111827",
+      "inputBorder": "#475569",
+      "heroBackground": "Deep blue gradient with lighter blue highlights",
+      "footerBackground": "#030712",
+      "footerText": "#F8FAFC",
+      "rules": [
+        "Preserve the original blue identity in dark mode.",
+        "Replace pale blue surfaces with deep navy surfaces.",
+        "Use subtle borders to separate cards from their surroundings.",
+        "Maintain readable muted text rather than reducing opacity excessively.",
+        "Retain yellow stars and decorative accents where contrast permits.",
+        "Do not invert photographs, video thumbnails, logos, or illustrations.",
+        "Keep white text on sufficiently dark hero and footer surfaces.",
+        "Apply theme colors consistently across controls and every section."
+      ]
+    },
+
+    "themeBehavior": {
+      "default": "Light mode",
+      "control": "Pill-shaped theme toggle in the header",
+      "expectedBehavior": [
+        "Switch between light and dark themes.",
+        "Update backgrounds, text, borders, inputs, cards, and controls together.",
+        "Keep the selected theme consistent while navigating the page.",
+        "Provide a visible selected state and accessible control label."
+      ]
+    }
+  },
+
+  "responsiveBreakpoints": {
+    "source": "Tailwind CSS default breakpoint values",
+    "screens": {
+      "base": {
+        "minWidth": "0px",
+        "behavior": "Small mobile layout"
+      },
+      "sm": {
+        "minWidth": "640px",
+        "behavior": "Large mobile and small tablet adjustments"
+      },
+      "md": {
+        "minWidth": "768px",
+        "behavior": "Tablet and compact desktop-like layouts"
+      },
+      "lg": {
+        "minWidth": "1024px",
+        "behavior": "Desktop navigation and full multi-column layouts"
+      },
+      "xl": {
+        "minWidth": "1280px",
+        "behavior": "Expanded desktop content width"
+      },
+      "2xl": {
+        "minWidth": "1536px",
+        "behavior": "Maximum-width desktop presentation"
+      }
+    },
+    "layoutRules": [
+      "Use a mobile-first layout.",
+      "Do not force horizontal scrolling on the overall page.",
+      "Allow card grids to reduce their column count naturally.",
+      "Use a centered maximum-width container.",
+      "Scale hero typography fluidly within the specified ranges.",
+      "Keep course and testimonial carousels horizontally scrollable when appropriate.",
+      "Treat the breakpoints as minimum widths, not fixed device categories."
+    ]
+  },
+
+  "globalLayout": {
+    "pageStructure": [
+      "Hero and navigation",
+      "Course categories",
+      "Platform benefits and trust",
+      "Popular courses",
+      "Learner success stories",
+      "Frequently asked questions",
+      "Final learning CTA",
+      "Footer"
+    ],
+    "outerCanvas": {
+      "description": "Pale cyan margin or background visible around the central page in the screenshot.",
+      "implementation": "Use a pale blue page canvas and a centered main surface.",
+      "responsiveRule": "Reduce outer margins on smaller screens; use the full viewport width on mobile."
+    },
+    "container": {
+      "width": "100%",
+      "maxWidth": "1200px",
+      "alignment": "Centered",
+      "paddingX": {
+        "base": "16px",
+        "sm": "20px",
+        "md": "24px",
+        "lg": "32px"
+      }
+    },
+    "sectionRhythm": {
+      "description": "Alternating white and very pale blue backgrounds.",
+      "rules": [
+        "Use consistent top and bottom padding.",
+        "Keep headings visually connected to their descriptions.",
+        "Separate content sections with background changes and whitespace rather than heavy dividers.",
+        "Align content edges across sections.",
+        "Avoid excessive vertical whitespace between compact related elements."
+      ]
+    }
+  },
+
+  "sections": {
+    "hero": {
+      "position": 1,
+      "background": "Full-width blue vertical gradient",
+      "height": {
+        "mobile": "Auto; approximately 620px–760px depending on content",
+        "desktop": "Approximately 620px–720px"
+      },
+      "header": {
+        "layout": "Horizontal brand, navigation links, and theme toggle",
+        "alignment": "Vertically centered",
+        "brand": {
+          "position": "Left",
+          "content": "Small yellow/green emblem and white wordmark",
+          "behavior": "Link to the landing page"
+        },
+        "navigation": {
+          "position": "Center or between brand and theme control",
+          "content": [
+            "Home",
+            "Courses",
+            "About",
+            "Blog",
+            "Contact"
+          ],
+          "style": "Small, understated white or pale-blue text",
+          "desktopBehavior": "Horizontal links",
+          "mobileBehavior": "Compact menu or collapsible navigation"
+        },
+        "themeToggle": {
+          "position": "Right",
+          "shape": "White pill",
+          "content": "Theme label and circular icon",
+          "behavior": "Switches light and dark modes"
+        }
+      },
+      "heroContent": {
+        "alignment": "Centered",
+        "elements": [
+          {
+            "type": "Eyebrow",
+            "content": "Small pill-shaped introductory label",
+            "style": "White or pale-blue pill with dark text"
+          },
+          {
+            "type": "Main heading",
+            "text": "Learn Anywhere, Anytime Empower Your Future",
+            "layout": "Two centered lines on desktop",
+            "style": "Large bold white text",
+            "maxWidth": "760px"
+          },
+          {
+            "type": "Description",
+            "content": "Short supporting statement about flexible learning and gaining practical skills",
+            "style": "Small white text with reduced opacity",
+            "maxWidth": "440px"
+          },
+          {
+            "type": "Search",
+            "content": "Search your courses",
+            "style": "White rounded input with magnifying-glass icon",
+            "maxWidth": "360px",
+            "behavior": "Accept a course query and provide a clear submission affordance"
+          }
+        ]
+      },
+      "heroArtwork": {
+        "mainSubject": "Smiling young learner wearing an orange sweater and backpack, holding a book",
+        "placement": "Centered below the search control",
+        "background": "Layered blue concentric circles or broad semicircular arcs",
+        "decorations": [
+          "Small hand-drawn white sparkle lines",
+          "Yellow starburst near the right",
+          "Small yellow sunburst near the left"
+        ],
+        "treatment": "Portrait overlaps the decorative circular background",
+        "responsiveBehavior": "Scale the portrait and arcs without obscuring the heading or search field"
+      },
+      "floatingProofCards": [
+        {
+          "placement": "Lower left of hero",
+          "content": [
+            "4.8 rating",
+            "Five yellow stars",
+            "Short learner satisfaction statement"
+          ],
+          "surface": "White",
+          "radius": "12px",
+          "shadow": "heroBadge"
+        },
+        {
+          "placement": "Lower right of hero",
+          "content": [
+            "Small overlapping learner avatars",
+            "60K+ learners",
+            "Short expert-guidance statement"
+          ],
+          "surface": "White",
+          "radius": "12px",
+          "shadow": "heroBadge"
+        }
+      ],
+      "responsiveRules": {
+        "base": "Reduce heading size; stack content; scale artwork; move proof cards away from the viewport edges.",
+        "sm": "Allow a wider heading and search control; maintain the central composition.",
+        "md": "Introduce more spacing around the portrait and proof cards.",
+        "lg": "Display the full decorative composition with floating proof cards.",
+        "xl": "Constrain content width and preserve generous negative space."
+      }
+    },
+
+    "courseCategories": {
+      "position": 2,
+      "background": "White in light mode",
+      "heading": "Explore Our Top Course Categories",
+      "description": "Discover a wide range of learning paths, from design to development, business, and personal growth.",
+      "layout": {
+        "desktop": "Three columns by two rows",
+        "tablet": "Two or three columns depending on available width",
+        "mobile": "Two columns when cards remain readable; one column for very narrow layouts"
+      },
+      "items": [
+        {
+          "title": "Design",
+          "metadata": "Course count",
+          "image": "Designer working at a computer in a creative studio"
+        },
+        {
+          "title": "Web Development",
+          "metadata": "Course count",
+          "image": "Developer working with code on a computer"
+        },
+        {
+          "title": "Business Consulting",
+          "metadata": "Course count",
+          "image": "Business professionals collaborating around a table"
+        },
+        {
+          "title": "Digital Marketing",
+          "metadata": "Course count",
+          "image": "Digital content or marketing workspace"
+        },
+        {
+          "title": "Photography & Videography",
+          "metadata": "Course count",
+          "image": "Photography or video-production equipment and workspace"
+        },
+        {
+          "title": "Language Learning",
+          "metadata": "Course count",
+          "image": "People studying or practicing a language"
+        }
+      ],
+      "categoryCard": {
+        "imageRatio": "Approximately 16:9",
+        "imageRadius": "12px",
+        "titleAlignment": "Centered",
+        "metadataAlignment": "Centered",
+        "description": "Image-led category tile with title and compact count below",
+        "hover": "Subtle lift, slight image zoom, or a blue-accented outline",
+        "clickBehavior": "Navigate to the selected category"
+      }
+    },
+
+    "platformBenefits": {
+      "position": 3,
+      "background": "White in light mode",
+      "heading": "Why Thousands of Learners Trust Us",
+      "description": "A short statement describing the learning community, expert guidance, and quality learning resources.",
+      "layout": "Asymmetric three-column composition on desktop",
+      "components": [
+        {
+          "type": "Expert trainers",
+          "layout": "Large photographic tile above a small explanatory card",
+          "image": "Learner or educator in a bright workspace",
+          "icon": "Small blue circular icon",
+          "title": "Expert Trainers",
+          "description": "Short explanation of instructor expertise and practical teaching"
+        },
+        {
+          "type": "Global community",
+          "layout": "Tall pale-blue central card",
+          "visual": "Circular arrangement of learner profile photos connected by fine lines",
+          "icon": "Small blue circular icon",
+          "title": "Global Community",
+          "description": "Brief statement about learner collaboration and shared experiences"
+        },
+        {
+          "type": "Flexible learning",
+          "layout": "Compact text card above a large photographic tile",
+          "image": "Learner studying with a laptop or notebook",
+          "icon": "Small blue circular icon",
+          "title": "Flexible Learning Experience",
+          "description": "Short statement about learning at one's own pace"
+        }
+      ],
+      "cardStyle": {
+        "background": "Pale blue or white",
+        "radius": "14px–16px",
+        "shadow": "Subtle",
+        "iconPlacement": "Top-left or immediately above the heading"
+      },
+      "responsiveRules": [
+        "Maintain the asymmetric composition on desktop.",
+        "Stack the benefit groups on narrow mobile screens.",
+        "Avoid making text cards too narrow to read.",
+        "Keep imagery and its associated explanation visually grouped."
+      ]
+    },
+
+    "popularCourses": {
+      "position": 4,
+      "background": "Very pale blue",
+      "heading": "Explore Most Popular Courses",
+      "description": "Learn from top-rated instructors across in-demand categories and develop practical skills.",
+      "categoryFilters": [
+        "All Courses",
+        "UI/UX Design",
+        "Development",
+        "Digital Marketing",
+        "Language Learning",
+        "Business Consulting"
+      ],
+      "filterStyle": {
+        "shape": "Pill",
+        "active": {
+          "background": "#3B82F6",
+          "text": "#FFFFFF"
+        },
+        "inactive": {
+          "background": "#FFFFFF",
+          "text": "#334155"
+        },
+        "behavior": "Filter the visible course collection"
+      },
+      "grid": {
+        "desktop": "Three columns by two rows in the visible collection",
+        "tablet": "Two columns",
+        "mobile": "One or two columns depending on available width",
+        "alternative": "Horizontal carousel with partial adjacent cards visible"
+      },
+      "courseCard": {
+        "surface": "White",
+        "radius": "14px",
+        "padding": "8px–12px",
+        "shadow": "Subtle",
+        "image": {
+          "ratio": "16:9",
+          "radius": "9px",
+          "description": "Colorful course thumbnail with large embedded title text",
+          "overlays": [
+            "Small course-level badge",
+            "Optional language or category label",
+            "Optional discount badge"
+          ]
+        },
+        "body": [
+          {
+            "element": "Course title",
+            "style": "Compact bold heading, up to two lines"
+          },
+          {
+            "element": "Instructor",
+            "style": "Small muted text"
+          },
+          {
+            "element": "Metadata row",
+            "content": [
+              "Rating",
+              "Student count or lesson count",
+              "Duration or course type"
+            ],
+            "style": "Compact icon-and-text labels"
+          },
+          {
+            "element": "Price",
+            "style": "Bold, aligned with the bottom action"
+          },
+          {
+            "element": "Course CTA",
+            "label": "Enroll Now",
+            "style": "Small black or dark pill-shaped button in the reference"
+          }
+        ],
+        "contentExamples": [
+          "Learn Figma from Basic",
+          "Web Development Bootcamp",
+          "Webflow for Beginners",
+          "Learn Framer from Basic",
+          "Digital Marketing Essentials",
+          "English for Daily Conversations"
+        ],
+        "interaction": [
+          "Course card opens course details.",
+          "Enrollment CTA opens enrollment or course details.",
+          "Category filters update the visible collection.",
+          "Cards provide visible hover and keyboard-focus states."
+        ]
+      },
+      "carouselControls": {
+        "placement": "Below the course grid",
+        "elements": [
+          "Small pagination indicator",
+          "Previous control",
+          "Next control"
+        ],
+        "style": "Compact square or rounded buttons; selected control uses blue",
+        "behavior": "Update the visible course group and pagination state"
+      }
+    },
+
+    "learnerStories": {
+      "position": 5,
+      "background": "White",
+      "heading": "Stories from Our Successful Learners",
+      "description": "Short introductory copy about learners who developed practical skills and progressed in their careers.",
+      "layout": "Horizontally scrolling testimonial cards",
+      "card": {
+        "width": "Approximately 190px–260px on desktop",
+        "imageRatio": "Portrait-oriented or tall landscape crop",
+        "radius": "12px",
+        "imageTreatment": "Full-card photographic background",
+        "overlay": "Dark gradient near the bottom for text contrast",
+        "content": [
+          "Learner name",
+          "Role, profession, or learning outcome",
+          "Circular play button"
+        ],
+        "playButton": {
+          "shape": "Circle",
+          "background": "#FFFFFF",
+          "icon": "Dark play triangle",
+          "behavior": "Open a testimonial video or modal"
+        }
+      },
+      "visualBehavior": [
+        "Show multiple learner cards in one horizontal row.",
+        "Allow partial neighboring cards to appear at the edges.",
+        "Keep names and roles anchored to the bottom.",
+        "Provide touch-friendly horizontal scrolling on mobile.",
+        "Use a carousel control if the row cannot be navigated comfortably by scrolling."
+      ]
+    },
+
+    "faq": {
+      "position": 6,
+      "background": "White",
+      "heading": "Frequently Asked Questions",
+      "description": "A brief invitation to review answers to common learner questions.",
+      "container": {
+        "maxWidth": "720px",
+        "alignment": "Centered"
+      },
+      "accordion": {
+        "itemStyle": {
+          "background": "#F1F5F9",
+          "radius": "8px",
+          "padding": "12px–16px",
+          "gap": "8px"
+        },
+        "questionStyle": {
+          "fontSize": "13px–14px",
+          "weight": 500,
+          "color": "#334155"
+        },
+        "icon": "Small chevron on the right",
+        "interaction": "Click or keyboard activation expands or collapses the answer",
+        "initialState": "Questions appear collapsed unless a deliberate default-open item is desired",
+        "items": [
+          {
+            "question": "Do I need any prior experience before starting a course?",
+            "answer": "Explain which courses are beginner-friendly and where prerequisites are listed."
+          },
+          {
+            "question": "Do I need any prior experience before starting a course?",
+            "answer": "Clarify how to choose a course based on current skill level."
+          },
+          {
+            "question": "How long will I have access to the course materials after enrolling?",
+            "answer": "Describe course access duration and any relevant account restrictions."
+          },
+          {
+            "question": "Are the certificates you provide recognized or useful for career advancement?",
+            "answer": "Explain what course certificates represent and how learners can use them."
+          },
+          {
+            "question": "Can I interact with instructors or get support during the course?",
+            "answer": "Describe available instructor communication and learner support options."
+          }
+        ]
+      },
+      "note": "The reference contains five compact accordion rows. Replace duplicated or unclear question copy with finalized product FAQ content."
+    },
+
+    "finalCTA": {
+      "position": 7,
+      "background": "Layered pale-blue circular shapes on a white or very pale blue surface",
+      "heading": "Ready to Start Learning?",
+      "description": "Join thousands of learners gaining new skills and discovering opportunities through accessible online education.",
+      "alignment": "Centered",
+      "elements": [
+        {
+          "type": "Heading",
+          "style": "Bold dark heading"
+        },
+        {
+          "type": "Description",
+          "style": "Small muted centered text"
+        },
+        {
+          "type": "Primary CTA",
+          "label": "Get Started Now",
+          "style": "Blue pill-shaped button with small directional icon"
+        },
+        {
+          "type": "Portrait",
+          "description": "Smiling learner in an orange sweater with a backpack",
+          "placement": "Centered beneath the CTA",
+          "treatment": "Large portrait over layered concentric circular backgrounds"
+        }
+      ],
+      "composition": {
+        "top": "Heading, description, and button",
+        "middle": "Circular blue illustration or decorative rings",
+        "bottom": "Large centered learner portrait",
+        "overflow": "Portrait and circles may extend to the bottom boundary of the section"
+      },
+      "responsiveRules": [
+        "Reduce the portrait size on mobile.",
+        "Keep the CTA visible without requiring a long scroll within the section.",
+        "Use overflow clipping carefully to preserve the circular composition.",
+        "Prevent decorative rings from introducing horizontal page overflow."
+      ]
+    },
+
+    "footer": {
+      "position": 8,
+      "background": "#030303",
+      "textColor": "#FFFFFF",
+      "layout": "Full-width dark footer with a contact strip and multi-column link area",
+      "topContactArea": {
+        "heading": "Let's Connect with us",
+        "description": "Short invitation to stay connected and receive learning updates",
+        "actions": [
+          {
+            "label": "Contact Us",
+            "style": "Dark or transparent outlined pill"
+          },
+          {
+            "label": "Get Started",
+            "style": "Blue pill with small icon"
+          }
+        ],
+        "divider": "Thin gray horizontal rule"
+      },
+      "mainFooter": {
+        "columns": [
+          {
+            "title": "Brand",
+            "content": [
+              "Logo and wordmark",
+              "Short platform description",
+              "Newsletter subscription"
+            ]
+          },
+          {
+            "title": "Quick Links",
+            "links": [
+              "Home",
+              "About Us",
+              "Courses",
+              "Instructors",
+              "Testimonials",
+              "FAQ"
+            ]
+          },
+          {
+            "title": "Popular Categories",
+            "links": [
+              "UI/UX Design",
+              "Web Development",
+              "Digital Marketing",
+              "Photography",
+              "Business Consulting",
+              "Language Learning"
+            ]
+          },
+          {
+            "title": "Contact Information",
+            "content": [
+              "Phone",
+              "Email",
+              "Address"
+            ]
+          }
+        ]
+      },
+      "newsletter": {
+        "heading": "Subscribe to our newsletter",
+        "input": "Email address",
+        "button": "Subscribe Now",
+        "style": "Rounded dark input and blue pill-shaped action",
+        "behavior": "Validate the email and show submission feedback"
+      },
+      "bottomBar": {
+        "left": "Copyright notice",
+        "links": [
+          "Privacy Policy",
+          "Terms & Conditions",
+          "Accessibility"
+        ],
+        "right": "Social media icon links",
+        "style": "Small text with a subtle divider or ample spacing"
+      },
+      "responsiveRules": [
+        "Use four columns on wide desktop layouts.",
+        "Reduce to two columns at intermediate widths.",
+        "Stack brand, newsletter, and link groups on mobile.",
+        "Allow newsletter controls to wrap or stack.",
+        "Keep the legal links and social icons readable and touch-accessible."
+      ]
+    }
+  },
+
+  "responsiveImplementation": {
+    "base": {
+      "width": "0px and above",
+      "header": "Compact brand and menu toggle; hide secondary navigation links behind a menu",
+      "hero": "Centered copy, reduced heading size, portrait below search, proof cards stacked or carefully repositioned",
+      "categories": "Two columns when readable; otherwise one",
+      "benefits": "Single-column or simple stacked layout",
+      "courses": "One or two columns; filters horizontally scrollable if needed",
+      "stories": "Horizontal touch-scrolling cards",
+      "faq": "Full-width accordion with 16px side padding",
+      "cta": "Centered heading, button, and reduced portrait",
+      "footer": "Stacked groups"
+    },
+
+    "sm": {
+      "minWidth": "640px",
+      "header": "More spacious navigation and larger logo",
+      "hero": "Larger heading and search; wider artwork",
+      "categories": "Two or three columns",
+      "benefits": "Two-column arrangements where useful",
+      "courses": "Two-column card grid",
+      "stories": "Several visible cards",
+      "footer": "Two-column layout where appropriate"
+    },
+
+    "md": {
+      "minWidth": "768px",
+      "header": "Horizontal navigation may become fully visible",
+      "hero": "Larger centered composition and wider floating proof cards",
+      "categories": "Three columns when space permits",
+      "benefits": "Two or three columns",
+      "courses": "Two or three columns depending on card width",
+      "faq": "Constrained centered content",
+      "footer": "Two or three columns"
+    },
+
+    "lg": {
+      "minWidth": "1024px",
+      "header": "Full desktop navigation and theme control",
+      "hero": "Complete decorative composition with side proof cards",
+      "categories": "Three-column grid",
+      "benefits": "Asymmetric three-column layout",
+      "courses": "Three-column grid",
+      "stories": "Multi-card horizontal carousel",
+      "footer": "Four-column layout"
+    },
+
+    "xl": {
+      "minWidth": "1280px",
+      "header": "Full layout with controlled maximum width",
+      "hero": "Generous whitespace and full-size portrait composition",
+      "mainContent": "Centered container with larger section padding",
+      "cards": "Consistent card widths and gaps"
+    },
+
+    "2xl": {
+      "minWidth": "1536px",
+      "mainContent": "Maintain a readable maximum content width rather than stretching indefinitely",
+      "outerCanvas": "Allow balanced side margins",
+      "hero": "Keep the artwork centered relative to the main container"
+    }
+  },
+
+  "accessibility": {
+    "contrast": [
+      "Use WCAG AA contrast as the target for text and interactive controls.",
+      "Do not rely on pale text alone to communicate important information.",
+      "Check muted text and button labels in both themes.",
+      "Use a dark gradient behind text over photographs when necessary."
+    ],
+    "keyboard": [
+      "All links, buttons, search fields, filters, carousel controls, and accordion triggers must be keyboard-accessible.",
+      "Provide clearly visible focus indicators.",
+      "Support Enter and Space for appropriate interactive controls.",
+      "Do not trap keyboard focus in the navigation or carousel."
+    ],
+    "semantics": [
+      "Use one primary page heading.",
+      "Organize sections with meaningful headings.",
+      "Use actual buttons for actions and links for navigation.",
+      "Give informative images useful alternative text.",
+      "Use empty alternative text for purely decorative imagery.",
+      "Provide accessible labels for icon-only controls."
+    ],
+    "motion": [
+      "Respect prefers-reduced-motion.",
+      "Avoid relying on animation to reveal essential information.",
+      "Keep carousel and accordion transitions subtle."
+    ],
+    "touchTargets": "Aim for interactive targets around 44px by 44px, particularly on mobile."
+  },
+
+  "functionalRequirements": {
+    "navigation": "Links navigate to their intended page or section.",
+    "themeToggle": "Changes all relevant interface tokens between light and dark themes.",
+    "courseSearch": "Accepts a query and submits it to course search.",
+    "categoryCards": "Navigate to the corresponding category.",
+    "courseFilters": "Filter the visible courses.",
+    "courseCards": "Open course details or enrollment.",
+    "courseCarousel": "Previous, next, and pagination controls work.",
+    "testimonials": "Play controls open a real video or video modal.",
+    "faq": "Questions expand and collapse with accessible state announcements.",
+    "newsletter": "Validates the email and communicates submission status.",
+    "footerLinks": "Navigate to the appropriate destinations.",
+    "socialLinks": "Open the appropriate social profiles."
+  },
+
+  "assetGuidelines": {
+    "photography": [
+      "Use cohesive, professional educational imagery.",
+      "Prefer natural expressions, realistic workspaces, and collaborative learning.",
+      "Keep category thumbnails consistent in aspect ratio.",
+      "Use portrait crops for learner stories and the hero portrait.",
+      "Avoid mixing noticeably different image treatments."
+    ],
+    "heroPortrait": "Use a transparent-background portrait if available so the subject can overlap the circular artwork naturally.",
+    "courseThumbnails": "Use colorful course-specific thumbnails with readable titles and consistent image proportions.",
+    "avatars": "Use small circular portraits with a consistent crop and size.",
+    "decorations": "Create the hero arcs, starbursts, and CTA circles as separate reusable decorative elements.",
+    "fallbacks": "Reserve image dimensions and provide appropriate fallbacks to prevent layout shifts.",
+    "darkMode": "Do not apply dark-mode filters to photographs or thumbnail artwork."
+  },
+
+  "qualityChecks": [
+    "The page follows the section order shown in the reference.",
+    "The hero is the most visually prominent section.",
+    "Headings and content align consistently across sections.",
+    "Course cards remain readable at every breakpoint.",
+    "Carousels do not create horizontal overflow on the overall page.",
+    "Both themes have complete, intentional surface and text colors.",
+    "Interactive controls have functional behavior rather than decorative appearances only.",
+    "The footer stacks cleanly on mobile.",
+    "The page maintains the same visual identity across viewport sizes.",
+    "The design does not depend on the exact dimensions of the supplied screenshot."
+  ]
+}
